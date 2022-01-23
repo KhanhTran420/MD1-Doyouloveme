@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT Doyouloveme</title>
+</head>
+<body>
+  <h1>Do U Love Me</h1>
+<input type="button" value="Yes I Do" onclick="clickYes()">
+<input type="button" value="No" id="yeah" style="position: absolute" onmouseover="hoverNo()">
+
+<script>
+    function clickYes(){
+        alert("Call me maybe")
+    }
+    function hoverNo(){
+        let a = Math.floor(Math.random()*window.innerWidth)
+        let b = Math.floor(Math.random()*window.innerHeight)
+        document.getElementById("yeah").style.left = a + "px"
+        document.getElementById("yeah").style.top = b + "px"
+    }
+</script>
+</body>
+</html>
